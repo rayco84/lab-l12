@@ -1,0 +1,15 @@
+{
+  "name": "lab-l12",
+  "version": "1.0.0",
+  "description": "Lab L-12: Managing Backend Wallets and Creating Transactions in a Blockchain Application",
+  "main": "index.js",
+  "scripts": {
+    "lars": "lars",
+    "lars:config": "lars config",
+    "start": "bash -lc 'npm --prefix backend run start & LOGGERSERVER_PID=$!; npm --prefix frontend run start & FRONTEND_PID=$!; trap \"kill $LOGGERSERVER_PID $FRONTEND_PID\" INT TERM EXIT; lars start'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@bsv/lars": "^1.5.0"
+  }
+}
