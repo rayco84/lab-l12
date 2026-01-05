@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Lab L-12: Managing Backend Wallets and Creating Transactions in a Blockchain Application",
   "main": "index.js",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
     "lars": "lars",
     "lars:config": "lars config",
